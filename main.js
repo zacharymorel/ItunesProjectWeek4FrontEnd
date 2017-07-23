@@ -100,6 +100,8 @@ searchBox.addEventListener('keyup', event => {
   url = 'https://itunes.apple.com/search?term='
 });
 
-// 3. Create your `fetch` request that is called after a submission
-// 4. Create a way to append the fetch results to your page
-// 5. Create a way to listen for a click that will play the song in the audio play
+
+
+//   var capture = searchBox.value;
+// url += `${capture}&limit=15`;
+// Why do we have the url = 'https://itunes.apple.com/search?term=' at the end of both addEventListener fuctions?
