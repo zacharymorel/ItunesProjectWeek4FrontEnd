@@ -1,11 +1,10 @@
 html {
-  font-family: sans-serif;
+  font-family: sans-serif, serif;
 }
 
 body {
-  background-color: #60d9f1;
   min-height: 100vh;
-  background-image: url('Images/ItunesImagesYellowCrowd.jpg');
+  background-image: url('Images/RecordPlayer.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -13,11 +12,11 @@ body {
 }
 
 img {
-  width:120px;
+  width: 120px;
   height: 120px;
 }
 
-ul{
+ul {
   display: flex;
   flex-flow: wrap;
   justify-content: center;
@@ -33,45 +32,73 @@ li {
   width: calc(20% - 10px);
 }
 p {
-  margin: 3px 0px;
+  margin: 8px 21px;
 }
 
 .container {
   text-align: center;
-  margin:1em;
+  margin: 1em;
 }
 
 .player {
-  display:flex;
+  display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
+  margin: 0 .5em;
 }
 
 #bandsong {
-font-size: 12px;
-font-weight: bold;
+  margin: .8em 1em;
+  font-size: 15px;
+  font-weight: bold;
 }
 
-audio.music-player{
+audio.music-player {
   width: 100%;
 }
 
-#resultsp{
+#resultsp {
   text-align: left;
   font-weight: bold;
 }
 
 input {
-  width:86%;
+  width: 86%;
+  height: 20px;
 }
 
 button {
-  width:10%;
+  width: 10%;
+  height: 26px;
+  border-radius: 5%;
 }
 h3 {
   margin-top: 0;
 }
 
 .results {
+}
 
+@media (max-width: 800px) {
+  .results {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  li {
+    width: 25%;
+  }
+}
+
+@media (max-width: 550px) {
+  li {
+    width: 33%;
+  }
+  button {
+    width: 40%;
+    height: 26px;
+    border-radius: 5%;
+    margin-top: .75em;
+  }
 }
